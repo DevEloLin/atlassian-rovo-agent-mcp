@@ -1,0 +1,25 @@
+[project]
+name = "Atlassian-Rovo-Agent-MCP"
+version = "1.0.0"
+description = "MCP server and CLI for validating Atlassian Cloud API tokens for Atlassian Rovo agent workflows"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.28.0",
+    "mcp>=1.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+atlassian-rovo-agent-validator = "validator:main"
+atlassian-rovo-agent-mcp = "mcp_server:main"
+
+[tool.setuptools]
+py-modules = ["validator", "mcp_server"]
+
+[tool.uv]
+dev-dependencies = []
