@@ -1,7 +1,7 @@
 [project]
 name = "Atlassian-Rovo-Agent-MCP"
 version = "1.0.0"
-description = "MCP server and CLI for validating Atlassian Cloud API tokens for Atlassian Rovo agent workflows"
+description = "Local MCP facade that validates Atlassian tokens and proxies the official Atlassian Rovo MCP server"
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.10"
